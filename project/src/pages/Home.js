@@ -1,15 +1,15 @@
-import Login from "../components/Login.jsx"
-import Register from "../components/Register.jsx"
+import { useState } from "react";
+import Login from "../components/Login.jsx";
+import Register from "../components/Register.jsx";
 
 const Home = () => {
-    
-    return(
-        <>
-            <Login/>
-            <Register/>
-        </>
-    )
-}
+    const [isLoginPage, setisLoginPage] = useState(true)
 
+  return (
+    <>
+      {isLoginPage ? <Login sendMessage={setisLoginPage}/> : <Register sendMessage={setisLoginPage}/>}
+    </>
+  );
+};
 
 export default Home;
