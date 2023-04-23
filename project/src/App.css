@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,95 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.carouselImg{
+  display: flex;
+  justify-content: center;
 }
+.categoryTitle {
+  display: flex;
+}
+
+.cardParent {
+  display: flex;
+  width: 100%;
+}
+
+.cardContainer {
+  width: 10%;
+  border: 1px solid red;
+}
+
+
+/* Navbar Start */
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0px;
+}
+
+.searchBox {
+  width: 70%;
+  background-color: #F4F4FF;
+  display: flex;
+  align-items: center;
+}
+
+.searchBox__field {
+  display: flex;
+  gap: 5px;
+}
+
+.searchBox__field input {
+  border: none;
+  padding: 5px;
+  font-size: 18px;
+  width: 60vw;
+}
+
+.searchBox__field input:focus {
+  border: none;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.buttons__profile {
+  background-image: url("./assets/images/profile.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  border: none;
+  padding: 20px;
+  background-color: #F4F4FF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons__like {
+  background-image: url("./assets/images/heart.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  border: none;
+  padding: 20px;
+  background-color: #F4F4FF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons__basket {
+  background-image: url("./assets/images/basket.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  border: none;
+  padding: 20px;
+  background-color: #F4F4FF;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Navbar End */
