@@ -83,9 +83,9 @@ const Login = ({ sendMessage }) => {
   };
   return (
     <>
-      <div className="flex flex-col items-center justify-center gap-10 w-6/12">
+      <div className="flex flex-col items-center justify-center gap-10 w-full ">
         <div>
-          <img className="w-20" src={logo} alt="left" />
+          <img className="w-20" src={logo} alt="logo" />
         </div>
         <div className="flex flex-col gap-10 items-center">
           <div className="flex flex-col">
@@ -100,7 +100,6 @@ const Login = ({ sendMessage }) => {
             <button
               onClick={loginClick}
               disabled={isDisabled}
-              style={{ border: isRed ? "1px solid red" : "1px solid blue" }}
             >
               Login
             </button>

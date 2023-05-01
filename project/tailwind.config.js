@@ -24,7 +24,8 @@ module.exports = {
         'gega-melon': '#FFD369',
         'gega-grey': '#DDDDDD',
         'gega-white': '#F7F7F7',
-        'input': '#F4F4FF'
+        'input': '#F4F4FF',
+        'border-vio': '#6251dd'
       },
       spacing: {
         '128': '32rem',

@@ -2,7 +2,7 @@ import Name from "./Inputs/Name";
 import Email from "./Inputs/Email";
 import Password from "./Inputs/Password";
 import { useState, useEffect, useMemo } from "react";
-
+import logo from "../assets/images/logo.svg";
 const Register = ({ sendMessage }) => {
   const emailRegex = useMemo(
     () => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -64,27 +64,25 @@ const Register = ({ sendMessage }) => {
 
   return (
     <>
-      <div>
+      <div className="flex flex-col items-center justify-center gap-8 w-full">
         <div>
-          <img src="" alt="left" />
+          <img className="w-20" src={logo} alt="logo" />
         </div>
-        <div>
-          <img src="" alt="" />
-          <div>
-            <span>Welcome Back</span> <br />
-            <span>Register to ...</span>
+        <div className="flex flex-col gap-9 items-center">
+          <div className="flex flex-col">
+            <span className=" text-base">Welcome Back!</span>
+            <span className="font-bold text-xl">Register to your account</span>
           </div>
-          <div>
+          <div className="flex flex-col gap-4 ">
             <Name name={name} setName={setName} />
             <Email email={email} setEmail={setEmail} />
             <Password password={password} setPassword={setPassword} />
           </div>
-          <div>
+          <div className="w-48 flex flex-col gap-4 mt-10">
             <button onClick={loginClick}>Login</button>
             <button
               onClick={registerClick}
               disabled={isDisabled}
-              style={{ border: isRed ? "1px solid red" : "1px solid blue" }}
             >
               Register
             </button>

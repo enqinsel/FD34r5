@@ -5,7 +5,7 @@
 
 @layer base {
     input[type=text], input[type=password] {
-        @apply bg-input rounded-sm focus:outline-none p-1 placeholder:text-gray-500/50 w-96 h-12 text-xl
+        @apply bg-input rounded-sm focus:outline-border-vio p-1 placeholder:text-gray-500/50 w-96 h-12 text-xl
     }
 
     h3 {
