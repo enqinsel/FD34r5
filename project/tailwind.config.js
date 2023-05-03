@@ -25,7 +25,9 @@ module.exports = {
         'gega-grey': '#DDDDDD',
         'gega-white': '#F7F7F7',
         'input': '#F4F4FF',
-        'border-vio': '#6251dd'
+        'border-vio': '#6251dd',
+        'card': '#F4F4FF',
+        'price': '#6251DD'
       },
       spacing: {
         '128': '32rem',

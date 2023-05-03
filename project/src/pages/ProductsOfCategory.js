@@ -13,7 +13,7 @@ const ProductsOfCategory = () => {
       <hr />
       <div className="cardParent">
         <h1>{categoryName.categoryName}</h1>
-        <ProductList id={id.id} />
+        <ProductList id={id.id}  />
       </div>
     </>
   );

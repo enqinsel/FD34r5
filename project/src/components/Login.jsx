@@ -11,7 +11,7 @@ const Login = ({ sendMessage }) => {
   );
 
   const [isDisabled, setIsDisabled] = useState(true);
-  const [isRed, setIsRed] = useState(false);
+
 
   const [rememberMe, setRememberMe] = useState(true);
 
@@ -37,7 +37,6 @@ const Login = ({ sendMessage }) => {
   useEffect(() => {
     // regex kontrolü yapıyor ve eğer rememberme false olursa remove işlemi yapıyor.
     setIsDisabled(!emailRegex.test(email) || !passwordRegex.test(password));
-    setIsRed(!emailRegex.test(email) || !passwordRegex.test(password));
 
     if (!rememberMe) {
       localStorage.removeItem("rememberedEmail");

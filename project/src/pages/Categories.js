@@ -31,32 +31,32 @@ const Categories = () => {
 
       <Carousel autoplayInterval>
         <div className="carouselImg">
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
         </div>
         <div className="carouselImg">
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
         </div>
         <div className="carouselImg">
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
-          <img  src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
+          <img src={book1} alt="book" />
         </div>
       </Carousel>
 
       {categories.map((category) => (
-        <div key={category.id}>
-          <div className="categoryTitle">
-            <h2 key={category.id}>{category.name}</h2>
+        <div key={category.id} className="p-10">
+          <div className="flex justify-between mb-5">
+            <h2 className=" font-bold text-3xl" key={category.id}>{category.name}</h2>
             <button onClick={() => viewClick(category.id, category.name)}>
               View All
             </button>
           </div>
-          <div className="cardParent">
-            <ProductList id={category.id} />
+          <div className="flex gap-3 w-full">
+            <ProductList id={category.id} limit="4" />
           </div>
         </div>
       ))}

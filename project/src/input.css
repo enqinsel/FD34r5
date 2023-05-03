@@ -13,6 +13,6 @@
     }
 
     button {
-        @apply p-2 border w-full border-gega-red bg-gega-red font-gemunu tracking-widest text-white disabled:opacity-50
+        @apply p-2 border border-gega-red bg-gega-red font-gemunu tracking-widest text-white disabled:opacity-50
     }
 }

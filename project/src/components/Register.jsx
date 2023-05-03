@@ -20,15 +20,10 @@ const Register = ({ sendMessage }) => {
   const [password, setPassword] = useState("");
 
   const [isDisabled, setIsDisabled] = useState(true);
-  const [isRed, setIsRed] = useState(false);
+
 
   useEffect(() => {
     setIsDisabled(
-      name.length <= 3 ||
-      !emailRegex.test(email) ||
-      !passwordRegex.test(password)
-    );
-    setIsRed(
       name.length <= 3 ||
       !emailRegex.test(email) ||
       !passwordRegex.test(password)
