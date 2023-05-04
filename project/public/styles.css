@@ -617,6 +617,14 @@ button:disabled {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -627,6 +635,10 @@ button:disabled {
 
 .mt-14 {
   margin-top: 3.5rem;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -663,6 +675,10 @@ button:disabled {
 
 .w-full {
   width: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-row-reverse {
@@ -717,6 +733,11 @@ button:disabled {
   gap: 2.25rem;
 }
 
+.gap-x-40 {
+  -webkit-column-gap: 10rem;
+          column-gap: 10rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -729,6 +750,10 @@ button:disabled {
   border-width: 2px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -739,9 +764,8 @@ button:disabled {
   background-color: rgb(244 244 255 / var(--tw-bg-opacity));
 }
 
-.bg-purple-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
+.bg-transparent {
+  background-color: transparent;
 }
 
 .p-10 {
@@ -752,9 +776,23 @@ button:disabled {
   padding: 0.5rem;
 }
 
+.font-gemunu {
+  font-family: Gemunu Libre, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-base {
@@ -767,17 +805,24 @@ button:disabled {
   line-height: 1.75rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
 .font-semibold {
   font-weight: 600;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.tracking-normal {
+  letter-spacing: 0em;
 }
 
 .text-gray-500 {
@@ -790,11 +835,19 @@ button:disabled {
   color: rgb(98 81 221 / var(--tw-text-opacity));
 }
 
-.filter {
-  -webkit-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-          filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.text-view {
+  --tw-text-opacity: 1;
+  color: rgb(239 107 74 / var(--tw-text-opacity));
 }
 
 .first-letter\:uppercase::first-letter {
   text-transform: uppercase;
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
+}
+
+.hover\:outline-stone-600:hover {
+  outline-color: #57534e;
 }

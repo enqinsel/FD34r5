@@ -23,12 +23,11 @@ const Categories = () => {
   }, []);
 
   const viewClick = (id, categoryName) => {
-    window.location.href = `/productsofcategory/${id}/${categoryName}`;
+    window.location.href = `/categoryproducts/${id}/${categoryName}`;
   };
   return (
     <>
       <Navbar />
-
       <Carousel autoplayInterval>
         <div className="carouselImg">
           <img src={book1} alt="book" />
@@ -51,13 +50,14 @@ const Categories = () => {
         <div key={category.id} className="p-10">
           <div className="flex justify-between mb-5">
             <h2 className=" font-bold text-3xl" key={category.id}>{category.name}</h2>
-            <button onClick={() => viewClick(category.id, category.name)}>
+            <button className=" text-view border-none bg-transparent font-bold text-xl tracking-normal" onClick={() => viewClick(category.id, category.name)}>
               View All
             </button>
           </div>
           <div className="flex gap-3 w-full">
             <ProductList id={category.id} limit="4" />
           </div>
+          
         </div>
       ))}
     </>

@@ -40,19 +40,6 @@
   display: flex;
   justify-content: center;
 }
-/* .categoryTitle {
-  display: flex;
-}
-
-.cardParent {
-  display: flex;
-  width: 100%;
-} */
-
-/* .cardContainer {
-  width: 10%;
-  border: 1px solid red;
-} */
 
 
 /* Navbar Start */
@@ -127,3 +114,4 @@
   cursor: pointer;
 }
 /* Navbar End */
+

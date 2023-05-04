@@ -27,7 +27,8 @@ module.exports = {
         'input': '#F4F4FF',
         'border-vio': '#6251dd',
         'card': '#F4F4FF',
-        'price': '#6251DD'
+        'price': '#6251DD',
+        'view': '#EF6B4A'
       },
       spacing: {
         '128': '32rem',

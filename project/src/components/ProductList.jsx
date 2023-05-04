@@ -61,7 +61,7 @@ const ProductList = (props) => {
     <>
       {productData.slice(0,limit).map((product, index) => (
         <Fragment key={index}>
-          <div className=" w-1/4 flex flex-wrap bg-card border-gray-200 border-2 rounded p-2">
+          <div className="w-1/4 flex flex-wrap bg-card border-gray-200 border-2 rounded p-2">
             {product.imgUrl && <img className="w-3/6" src={product.imgUrl} alt="books"/>}
             <div className=" w-1/3 flex flex-col justify-around ">
               <div className="flex flex-col gap-3">
