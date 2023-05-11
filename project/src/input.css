@@ -8,11 +8,15 @@
         @apply bg-input rounded-sm focus:outline-border-vio p-1 placeholder:text-gray-500/50 w-96 h-12 text-xl
     }
 
+    input[type=checkbox]:not(:checked) {
+        @apply border-border-vio border
+    }
+
     h3 {
         @apply font-gemunu mb-2 mt-2
     }
 
     button {
-        @apply p-2 border border-gega-red bg-gega-red font-gemunu tracking-widest text-white disabled:opacity-50
+        @apply p-2 border border-gega-red bg-gega-red font-gemunu tracking-widest text-white disabled:opacity-50 rounded
     }
 }

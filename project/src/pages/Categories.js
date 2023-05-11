@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import React from "react";
 import axios from "axios";
 
-import Carousel from "nuka-carousel";
+// import Carousel from "nuka-carousel";
 import Navbar from "../components/Navbar";
 import ProductList from "../components/ProductList.jsx";
 
 import book1 from "../assets/images/carouselImg.svg";
+import Carousel from "../components/Carousel";
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
@@ -28,7 +29,7 @@ const Categories = () => {
   return (
     <>
       <Navbar />
-      <Carousel autoplayInterval>
+      {/* <Carousel autoplayInterval>
         <div className="carouselImg">
           <img src={book1} alt="book" />
           <img src={book1} alt="book" />
@@ -44,8 +45,8 @@ const Categories = () => {
           <img src={book1} alt="book" />
           <img src={book1} alt="book" />
         </div>
-      </Carousel>
-
+      </Carousel> */}
+      <Carousel></Carousel>
       {categories.map((category) => (
         <div key={category.id} className="p-10">
           <div className="flex justify-between mb-5">

@@ -14,6 +14,7 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/productdetail" element={<ProductDetail />} />
           <Route path="/categoryproducts/:id/:categoryName" element={<CategoryProducts />} />
+          <Route path="/productdetail/:categoryId/:categoryName/:productId" element={<ProductDetail />} />
           {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>

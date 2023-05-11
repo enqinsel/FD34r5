@@ -17,7 +17,8 @@ module.exports = {
     extend: {
       fontFamily: {
         gemunu: ['Gemunu Libre', 'sans-serif'],
-        open: ['Open Sans', 'sans-serif']
+        open: ['Open Sans', 'sans-serif'],
+        manrope: ['Manrope', 'sans-serif']
       },
       colors: {
         'gega-red': '#BC1A45',
@@ -28,7 +29,8 @@ module.exports = {
         'border-vio': '#6251dd',
         'card': '#F4F4FF',
         'price': '#6251DD',
-        'view': '#EF6B4A'
+        'view': '#EF6B4A',
+        'buy':'#EF6B4A'
       },
       spacing: {
         '128': '32rem',

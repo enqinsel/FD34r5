@@ -1,7 +1,7 @@
 const Password = ({password, setPassword}) => {
     return(
         <div>
-            <h3>Password</h3>
+            <h3 className="font-bold">Password</h3>
             <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
         </div>
     )
