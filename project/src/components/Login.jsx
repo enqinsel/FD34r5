@@ -54,7 +54,7 @@ const Login = ({ sendMessage }) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email:email, password:password }),
     })
       .then((response) => response.json())
       .then((data) => {

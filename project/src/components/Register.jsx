@@ -39,11 +39,12 @@ const Register = ({ sendMessage }) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ name, email, password }),
+      body: JSON.stringify({ email: email, name:name, password:password }),
     })
       .then((response) => response.json())
       .then((data) => {
-        window.location.href = "/categories";
+        console.log(data);
+        // window.location.href = "/categories";
       })
       .catch((error) => {
         console.error("Kayıt olurken hata oluştu:", error);
