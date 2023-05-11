@@ -11,5 +11,9 @@
   <h6> React Run -> npm start </h6>
   <h6>TailwindCSS START -> npm run watch</h6>
   
-   <h2>Projeyi Çalıştırma</h2>
-  
+   <h2>2 Dakika'da Önizle</h2>
+  <b>VİDEOYU İZLEMEK İÇİN AŞAĞIDAKİ RESME TIKLAYIN!</b> <br><br>
+   <a href="https://www.youtube.com/watch?v=JOGxfga76AA" target="_blank">
+ <img src="https://github.com/enqinsel/FD34r5/assets/76450122/ffa6ece4-826c-434e-9b8f-32aee78a2968" alt="Watch the video" border="10" />
+</a>
+
