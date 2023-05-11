@@ -89,7 +89,7 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-      <div className="float-right flex justify-between p-4 w-96 bg-buy font-manrope text-gega-white rounded mr-14">
+      <div className="float-right flex justify-between p-4 w-96 bg-buy font-manrope text-gega-white rounded mr-14 mb-10">
         <div className="flex gap-1"><span>{price}</span><span>&#36;</span></div>
         <span>Buy Now</span>
       </div>
