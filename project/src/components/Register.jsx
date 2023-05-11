@@ -3,6 +3,8 @@ import Email from "./Inputs/Email";
 import Password from "./Inputs/Password";
 import { useState, useEffect, useMemo } from "react";
 import logo from "../assets/images/logo.svg";
+
+
 const Register = ({ sendMessage }) => {
   const emailRegex = useMemo(
     () => /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
@@ -18,7 +20,6 @@ const Register = ({ sendMessage }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
@@ -42,7 +43,6 @@ const Register = ({ sendMessage }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Kayıt yapıldı:", data.action_register.id);
         window.location.href = "/categories";
       })
       .catch((error) => {
@@ -58,6 +58,7 @@ const Register = ({ sendMessage }) => {
   const clickModalBg = () => {
     setModalVisible(false)
   }
+  
   return (
     <>
       {/* Modal Start */}

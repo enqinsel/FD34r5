@@ -6,9 +6,6 @@ import { Helmet } from "react-helmet";
 function CategoryProducts() {
   const { id, categoryName } = useParams();
 
-  console.log(categoryName);
-  console.log(id);
-
   return (
     <>
       <Helmet>

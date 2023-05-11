@@ -1,4 +1,3 @@
-
 const Name = ({name, setName}) => {
     return(
         <div>

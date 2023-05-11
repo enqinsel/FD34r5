@@ -22,7 +22,7 @@ function Carousel() {
       dots[i].className = dots[i].className.replace(" active", "");
     }
     dots[slideIndex - 1].className += " active";
-  }, []);
+  });
 
   useEffect(() => {
     const slides = document.getElementsByClassName("mySlides");

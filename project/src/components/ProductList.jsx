@@ -1,4 +1,3 @@
-// import axios from "axios";
 import React, { useEffect, useState, Fragment } from "react";
 import { getCategory, getImage } from "../api.js";
 

@@ -5,6 +5,8 @@ import axios from "axios";
 import Navbar from "../components/Navbar";
 import ProductList from "../components/ProductList.jsx";
 import Carousel from "../components/Carousel";
+
+
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
@@ -23,6 +25,7 @@ const Categories = () => {
   const viewClick = (id, categoryName) => {
     window.location.href = `/categoryproducts/${id}/${categoryName}`;
   };
+  
   return (
     <>
       <Navbar />
